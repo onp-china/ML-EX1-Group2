@@ -1,0 +1,49 @@
+{
+  "accuracy": 0.8913,
+  "f1_score": 0.8915277916375611,
+  "n_models": 8,
+  "mc_dropout_dynamic": {
+    "accuracy": 0.8767,
+    "f1_score": 0.876167520337451,
+    "f1_macro": 0.8766977201403452,
+    "f1_class_0": 0.8772279199437396,
+    "f1_class_1": 0.8761675203369509,
+    "avg_uncertainty": 0.04248889163136482,
+    "std_uncertainty": 0.020312750712037086,
+    "avg_confidence": 0.9596011638641357,
+    "n_models": 8,
+    "mc_samples": 10
+  },
+  "two_level_dynamic": {
+    "accuracy": 0.889,
+    "f1_macro": 0.8889782397344872,
+    "f1_class_0": 0.8905325443781974,
+    "f1_class_1": 0.887423935090777,
+    "n_models": 8,
+    "n_groups": 4,
+    "test_size": 2000,
+    "avg_confidence": 0.8241989885044573,
+    "std_confidence": 0.1419481904383109,
+    "avg_weight_entropy": 1.3837416218925722
+  },
+  "original_stacking": {
+    "accuracy": 0.8912,
+    "f1_score": 0.8912217556488702,
+    "fold_scores": [
+      0.891,
+      0.901,
+      0.887,
+      0.8995,
+      0.8775
+    ]
+  },
+  "test_public_baseline": {
+    "accuracy": 0.924,
+    "f1_score": 0.9236180904522613
+  },
+  "test_public_stacking": {
+    "accuracy": 0.924,
+    "f1_score": 0.9236180904522613,
+    "f1_macro": 0.9239980999524988
+  }
+}

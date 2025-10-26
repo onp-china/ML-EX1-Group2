@@ -1,0 +1,36 @@
+{
+  "baseline": {
+    "simple_average": 0.8875,
+    "original_stacking": 0.903
+  },
+  "optimized": {
+    "lgb_original_features": 0.8965,
+    "lgb_feature_engineering": 0.896,
+    "nn_feature_engineering": 0.898
+  },
+  "improvements": {
+    "lgb_fe_vs_original": -0.007000000000000006,
+    "nn_fe_vs_original": -0.0050000000000000044
+  },
+  "best_method": {
+    "name": "神经网络+特征工程",
+    "accuracy": 0.898,
+    "improvement": -0.0050000000000000044
+  },
+  "feature_stats": {
+    "original_features": 9,
+    "engineered_features": 48,
+    "added_features": 39
+  },
+  "nn_cv_scores": {
+    "mean": 0.8899000000000001,
+    "std": 0.010725670142233542,
+    "folds": [
+      0.8945,
+      0.903,
+      0.887,
+      0.894,
+      0.871
+    ]
+  }
+}

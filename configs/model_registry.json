@@ -1,0 +1,159 @@
+{
+  "description": "MNIST数字比较模型注册表 - 从57%到93%的进化历程",
+  "models": [
+    {
+      "id": "improved_v2_s42",
+      "name": "ImprovedV2 (seed 42)",
+      "stage": 1,
+      "accuracy": 0.8528,
+      "path": "models/stage1_improvedv2/model.pt",
+      "metrics_path": "models/stage1_improvedv2/metrics.json",
+      "architecture": "resnet_compare",
+      "description": "阶段1代表模型：6头融合 + CBAM注意力，首次突破85%",
+      "key_innovation": "多头融合机制",
+      "params": "15.17M",
+      "training_epochs": 11
+    },
+    {
+      "id": "resnet_optimized_1.12",
+      "name": "ResNet-Optimized-1.12",
+      "stage": 2,
+      "accuracy": 0.8875,
+      "path": "models/stage2_resnet_optimized/resnet_optimized_1.12/model.pt",
+      "metrics_path": "models/stage2_resnet_optimized/resnet_optimized_1.12/metrics.json",
+      "architecture": "resnet_compare",
+      "description": "最佳单模型：ResNet[3,3,3] + Focal Loss + 混合精度训练",
+      "key_innovation": "Focal Loss + 深度网络",
+      "params": "4.75M",
+      "training_epochs": 72,
+      "is_best_single": true
+    },
+    {
+      "id": "resnet_fusion",
+      "name": "ResNet-Fusion",
+      "stage": 2,
+      "accuracy": 0.8792,
+      "path": "models/stage2_resnet_optimized/resnet_fusion/model.pt",
+      "metrics_path": "models/stage2_resnet_optimized/resnet_fusion/metrics.json",
+      "architecture": "resnet_compare",
+      "description": "ResNet[2,2,2] + 5头融合版本",
+      "key_innovation": "5头融合",
+      "params": "4.8M"
+    },
+    {
+      "id": "resnet_optimized",
+      "name": "ResNet-Optimized",
+      "stage": 2,
+      "accuracy": 0.8780,
+      "path": "models/stage2_resnet_optimized/resnet_optimized/model.pt",
+      "metrics_path": "models/stage2_resnet_optimized/resnet_optimized/metrics.json",
+      "architecture": "resnet_compare",
+      "description": "ResNet[2,2,2] 标准配置",
+      "params": "3.2M"
+    },
+    {
+      "id": "seed_2025",
+      "name": "ResNet Multi-Seed 2025",
+      "stage": 3,
+      "accuracy": 0.8739,
+      "path": "models/stage3_multi_seed/seed_2025/model.pt",
+      "metrics_path": "models/stage3_multi_seed/seed_2025/metrics.json",
+      "architecture": "resnet_compare",
+      "description": "Multi-seed训练，seed=2025",
+      "params": "4.8M"
+    },
+    {
+      "id": "fpn_model",
+      "name": "FPN Multi-Scale",
+      "stage": 3,
+      "accuracy": 0.8730,
+      "path": "models/stage3_multi_seed/fpn_model/model.pt",
+      "metrics_path": "models/stage3_multi_seed/fpn_model/metrics.json",
+      "architecture": "fpn_v2",
+      "description": "特征金字塔网络，多尺度特征融合",
+      "key_innovation": "FPN多尺度",
+      "params": "5.1M"
+    },
+    {
+      "id": "seed_2023",
+      "name": "ResNet Multi-Seed 2023",
+      "stage": 3,
+      "accuracy": 0.8702,
+      "path": "models/stage3_multi_seed/seed_2023/model.pt",
+      "metrics_path": "models/stage3_multi_seed/seed_2023/metrics.json",
+      "architecture": "resnet_compare",
+      "description": "Multi-seed训练，seed=2023，轻量化版本",
+      "params": "3.8M"
+    },
+    {
+      "id": "seed_2024",
+      "name": "ResNet Multi-Seed 2024",
+      "stage": 3,
+      "accuracy": 0.8671,
+      "path": "models/stage3_multi_seed/seed_2024/model.pt",
+      "metrics_path": "models/stage3_multi_seed/seed_2024/metrics.json",
+      "architecture": "resnet_compare",
+      "description": "Multi-seed训练，seed=2024，宽化版本",
+      "params": "6.5M"
+    },
+    {
+      "id": "resnet_fusion_seed42",
+      "name": "ResNet-Fusion Seed 42",
+      "stage": 3,
+      "accuracy": 0.8538,
+      "path": "models/stage3_multi_seed/resnet_fusion_seed42/model.pt",
+      "metrics_path": "models/stage3_multi_seed/resnet_fusion_seed42/metrics.json",
+      "architecture": "resnet_compare",
+      "description": "Fusion版本，seed=42",
+      "params": "4.8M"
+    },
+    {
+      "id": "resnet_fusion_seed123",
+      "name": "ResNet-Fusion Seed 123",
+      "stage": 3,
+      "accuracy": 0.8436,
+      "path": "models/stage3_multi_seed/resnet_fusion_seed123/model.pt",
+      "metrics_path": "models/stage3_multi_seed/resnet_fusion_seed123/metrics.json",
+      "architecture": "resnet_compare",
+      "description": "Fusion版本，seed=123",
+      "params": "4.8M"
+    },
+    {
+      "id": "resnet_fusion_seed456",
+      "name": "ResNet-Fusion Seed 456",
+      "stage": 3,
+      "accuracy": 0.8439,
+      "path": "models/stage3_multi_seed/resnet_fusion_seed456/model.pt",
+      "metrics_path": "models/stage3_multi_seed/resnet_fusion_seed456/metrics.json",
+      "architecture": "resnet_compare",
+      "description": "Fusion版本，seed=456",
+      "params": "4.8M"
+    }
+  ],
+  "stacking_info": {
+    "name": "Stacking Ensemble",
+    "stage": 4,
+    "accuracy": 0.9309,
+    "test_accuracy": 0.9030,
+    "description": "10个基础模型 + LightGBM元学习器，历史最高性能",
+    "base_models": [
+      "resnet_optimized_1.12",
+      "resnet_fusion",
+      "resnet_optimized",
+      "seed_2025",
+      "fpn_model",
+      "seed_2023",
+      "seed_2024",
+      "resnet_fusion_seed42",
+      "resnet_fusion_seed123",
+      "resnet_fusion_seed456"
+    ],
+    "meta_learner": "LightGBM",
+    "cv_folds": 5,
+    "cv_scores": [0.8905, 0.9045, 0.8835, 0.8970, 0.8780],
+    "cv_mean": 0.8907,
+    "key_innovation": "元学习器学习最优组合策略",
+    "improvement_vs_best_single": "+4.34%"
+  }
+}
+

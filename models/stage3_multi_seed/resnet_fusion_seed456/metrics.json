@@ -1,0 +1,17 @@
+{
+  "best_val_acc": 0.8439,
+  "best_val_f1": 0.8434848827798553,
+  "best_epoch": 38,
+  "params": 4785818,
+  "final_loss": 0.4047781149368457,
+  "layers": [
+    2,
+    2,
+    2
+  ],
+  "use_bottleneck": false,
+  "feat_dim": 256,
+  "width_mult": 1.25,
+  "seed": 456,
+  "threshold": 0.31
+}

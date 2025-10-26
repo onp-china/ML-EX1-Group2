@@ -1,0 +1,46 @@
+{
+  "Simple Average": {
+    "accuracy": 0.9975,
+    "f1_score": 0.9974580579562786
+  },
+  "Weighted Average": {
+    "accuracy": 0.997,
+    "f1_score": 0.9969512195121951
+  },
+  "Best Single Model": {
+    "accuracy": 0.8925,
+    "f1_score": 0.8910288900152052
+  },
+  "Majority Vote": {
+    "accuracy": 0.997,
+    "f1_score": 0.9969450101832994
+  },
+  "LightGBM Stacking": {
+    "accuracy": 0.9983333333333333,
+    "f1_score": 0.99830220713073
+  },
+  "Random Forest": {
+    "accuracy": 0.9966666666666667,
+    "f1_score": 0.9965986394557823
+  },
+  "Logistic Regression": {
+    "accuracy": 0.9983333333333333,
+    "f1_score": 0.99830220713073
+  },
+  "Confidence Based": {
+    "accuracy": 0.951,
+    "f1_score": 0.950253807106599
+  },
+  "Two Level Stacking": {
+    "accuracy": 0.9983333333333333,
+    "f1_score": 0.99830220713073
+  },
+  "Bayesian Ensemble": {
+    "accuracy": 0.997,
+    "f1_score": 0.9969512195121951
+  },
+  "Dynamic Weight Ensemble": {
+    "accuracy": 0.9975,
+    "f1_score": 0.9974580579562786
+  }
+}

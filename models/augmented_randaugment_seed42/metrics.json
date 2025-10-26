@@ -1,0 +1,22 @@
+{
+  "best_val_acc": 0.8808,
+  "best_val_f1": 0.8807866051824582,
+  "best_epoch": 57,
+  "params": 4754698,
+  "final_loss": 0.044311052393120574,
+  "layers": [
+    3,
+    3,
+    3
+  ],
+  "use_bottleneck": false,
+  "feat_dim": 256,
+  "use_amp": false,
+  "device": "cuda",
+  "seed": 42,
+  "augmentation_type": "randaugment",
+  "augmentation_config": {
+    "n_ops": 2,
+    "magnitude": 5
+  }
+}

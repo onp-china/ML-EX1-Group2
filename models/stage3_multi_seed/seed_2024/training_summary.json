@@ -1,0 +1,31 @@
+{
+  "seeds": [
+    2024
+  ],
+  "config": {
+    "epochs": 80,
+    "batch_size": 64,
+    "lr": 0.001,
+    "weight_decay": 0.0005,
+    "patience": 10,
+    "feat_dim": 256,
+    "layers": [
+      3,
+      3,
+      3
+    ],
+    "width_mult": 1.0,
+    "use_bottleneck": false,
+    "architecture": "resnet",
+    "output_dir": "models/stage3_multi_seed/seed_2024"
+  },
+  "results": [
+    [
+      2024,
+      0.875
+    ]
+  ],
+  "best_seed": 2024,
+  "best_acc": 0.875,
+  "avg_acc": 0.875
+}

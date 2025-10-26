@@ -1,0 +1,18 @@
+{
+  "best_val_acc": 0.878,
+  "best_val_f1": 0.8779998243192468,
+  "best_epoch": 37,
+  "params": 3204618,
+  "final_loss": 0.09693121910095215,
+  "layers": [
+    2,
+    2,
+    2
+  ],
+  "use_bottleneck": false,
+  "feat_dim": 256,
+  "test_acc": 0.882,
+  "test_f1": 0.8819857202716521,
+  "test_mode": "with_labels",
+  "val_test_diff": 0.0040000000000000036
+}

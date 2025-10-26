@@ -1,0 +1,12 @@
+Model,Train Accuracy,Val Accuracy,Test Public Accuracy,Parameters
+resnet_optimized_1.12,0.9602,0.8874,0.8845,N/A
+resnet_fusion,0.9342,0.8792,0.8900,N/A
+resnet_optimized,0.9137,0.8780,0.8820,N/A
+seed_2025,0.9500,0.8739,0.8785,N/A
+seed_2023,0.9472,0.8702,0.8795,N/A
+seed_2024,0.9377,0.8671,0.8675,N/A
+fpn_model,0.9560,0.8730,0.8790,"5,089,626"
+resnet_fusion_seed42,0.8974,0.8546,0.8525,N/A
+resnet_fusion_seed456,0.8876,0.8488,0.8350,N/A
+resnet_fusion_seed123,0.8833,0.8456,0.8480,N/A
+Stacking Ensemble,0.9567,0.9081,0.8985,10 models + LightGBM

@@ -1,0 +1,37 @@
+{
+  "test_dataset": "val",
+  "sample_count": 10000,
+  "class_distribution": [
+    5000,
+    5000
+  ],
+  "results": [
+    {
+      "method": "Stacking元学习器",
+      "accuracy": 0.9289,
+      "f1_score": 0.92880744968459,
+      "improvement": 0.04149999999999998
+    },
+    {
+      "method": "最佳单模型",
+      "accuracy": 0.8874,
+      "f1_score": 0.8860323886639676,
+      "improvement": 0.0
+    },
+    {
+      "method": "性能加权",
+      "accuracy": 0.8859,
+      "f1_score": 0.8862072404507829,
+      "improvement": -0.0014999999999999458
+    },
+    {
+      "method": "简单平均",
+      "accuracy": 0.8855,
+      "f1_score": 0.8858083175426349,
+      "improvement": -0.0019000000000000128
+    }
+  ],
+  "best_method": "Stacking元学习器",
+  "best_accuracy": 0.9289,
+  "improvement_over_single": 0.04149999999999998
+}

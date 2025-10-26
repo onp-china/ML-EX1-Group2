@@ -1,0 +1,59 @@
+{
+  "validation": {
+    "Simple Average": {
+      "accuracy": 0.4983,
+      "f1_score": 0.4931811294070108
+    },
+    "Weighted Average": {
+      "accuracy": 0.4975,
+      "f1_score": 0.49268046441191315
+    },
+    "Best Single Model": {
+      "accuracy": 0.5075,
+      "f1_score": 0.5071550085059542
+    },
+    "Meta Learner Average": {
+      "accuracy": 0.5111,
+      "f1_score": 0.5240922807359096
+    },
+    "Combined Ensemble": {
+      "accuracy": 0.5101,
+      "f1_score": 0.513939874987598
+    },
+    "Confidence Based": {
+      "accuracy": 0.4988,
+      "f1_score": 0.4938396283579075
+    }
+  },
+  "test": {
+    "Simple Average": {
+      "accuracy": 0.4935,
+      "f1_score": 0.491210447011552
+    },
+    "Weighted Average": {
+      "accuracy": 0.491,
+      "f1_score": 0.4904904904904905
+    },
+    "Best Single Model": {
+      "accuracy": 0.513,
+      "f1_score": 0.5110441767068273
+    },
+    "Meta Learner Average": {
+      "accuracy": 0.477,
+      "f1_score": 0.4862475442043222
+    },
+    "Combined Ensemble": {
+      "accuracy": 0.4895,
+      "f1_score": 0.498772704958272
+    },
+    "Confidence Based": {
+      "accuracy": 0.493,
+      "f1_score": 0.49096385542168675
+    }
+  },
+  "config": {
+    "n_models": 5,
+    "batch_size": 32,
+    "random_state": 42
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "Simple Average": {
+    "accuracy": 0.505,
+    "f1_score": 0.48704663212435234
+  },
+  "Weighted Average": {
+    "accuracy": 0.5,
+    "f1_score": 0.4897959183673469
+  },
+  "Majority Vote": {
+    "accuracy": 0.49,
+    "f1_score": 0.47959183673469385
+  },
+  "mc_dropout": {
+    "accuracy": 0.505,
+    "f1_score": 0.49230769230769234,
+    "avg_uncertainty": 0.022630128847887208
+  },
+  "two_level_stacking": {
+    "error": "需要提供基础模型的预测结果作为输入"
+  },
+  "dynamic_ensemble": {
+    "error": "Classification metrics can't handle a mix of binary and continuous targets"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "n_models": 10,
+  "cv_scores": [
+    0.8925,
+    0.9075,
+    0.8895,
+    0.9025,
+    0.872
+  ],
+  "cv_mean": 0.8927999999999999,
+  "cv_std": 0.012278436382536655,
+  "validation": {
+    "dataset": "验证集 (val.npz)",
+    "n_samples": 10000,
+    "stacking_accuracy": 0.9076,
+    "stacking_f1": 0.9078028337657155,
+    "simple_average_accuracy": 0.8855,
+    "improvement": 0.02210000000000001
+  },
+  "test_public": {
+    "dataset": "测试集 (test_public.npz)",
+    "n_samples": 2000,
+    "stacking_accuracy": 0.9,
+    "stacking_f1": 0.8991935483870968,
+    "simple_average_accuracy": 0.8905,
+    "improvement": 0.009500000000000064
+  }
+}

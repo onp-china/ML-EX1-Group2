@@ -1,0 +1,15 @@
+{
+  "seed": 2024,
+  "architecture": "resnet",
+  "feat_dim": 256,
+  "layers": [
+    3,
+    3,
+    3
+  ],
+  "width_mult": 1.0,
+  "use_bottleneck": false,
+  "best_val_acc": 0.875,
+  "total_params": 4754698,
+  "epoch": 35
+}

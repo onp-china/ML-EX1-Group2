@@ -1,0 +1,30 @@
+{
+  "Simple Average": {
+    "accuracy": 0.5,
+    "f1_score": 0.4915254237288136
+  },
+  "Weighted Average": {
+    "accuracy": 0.505,
+    "f1_score": 0.49746192893401014
+  },
+  "Best Single Model": {
+    "accuracy": 0.5116666666666667,
+    "f1_score": 0.5108514190317195
+  },
+  "Confidence Based": {
+    "accuracy": 0.5,
+    "f1_score": 0.4915254237288136
+  },
+  "Uncertainty Based": {
+    "accuracy": 0.5,
+    "f1_score": 0.4915254237288136
+  },
+  "Adaptive Ensemble": {
+    "accuracy": 0.5,
+    "f1_score": 0.4915254237288136
+  },
+  "Advanced Ensemble": {
+    "accuracy": 0.5,
+    "f1_score": 0.4915254237288136
+  }
+}

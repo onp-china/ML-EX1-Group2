@@ -1,0 +1,15 @@
+{
+  "best_val_acc": 0.8792,
+  "best_val_f1": 0.8791997632310358,
+  "best_epoch": 52,
+  "params": 4785818,
+  "final_loss": 0.23250064089932404,
+  "layers": [
+    2,
+    2,
+    2
+  ],
+  "use_bottleneck": false,
+  "feat_dim": 256,
+  "width_mult": 1.25
+}

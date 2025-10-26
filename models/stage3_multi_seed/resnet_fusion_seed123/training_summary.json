@@ -1,0 +1,32 @@
+{
+  "seeds": [
+    123
+  ],
+  "config": {
+    "epochs": 80,
+    "batch_size": 64,
+    "lr": 0.001,
+    "weight_decay": 0.0005,
+    "patience": 10,
+    "feat_dim": 256,
+    "layers": [
+      2,
+      2,
+      2
+    ],
+    "width_mult": 1.0,
+    "use_bottleneck": false,
+    "use_fusion": true,
+    "architecture": "resnet",
+    "output_dir": "models/stage3_multi_seed/resnet_fusion_seed123"
+  },
+  "results": [
+    [
+      123,
+      0.8702
+    ]
+  ],
+  "best_seed": 123,
+  "best_acc": 0.8702,
+  "avg_acc": 0.8702
+}

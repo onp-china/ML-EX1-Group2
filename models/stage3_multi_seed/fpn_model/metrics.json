@@ -1,0 +1,15 @@
+{
+  "feat_dim": 256,
+  "layers": [
+    2,
+    2,
+    2
+  ],
+  "best_val_acc": 0.8658,
+  "total_params": 5089626,
+  "trainable_params": 5089626,
+  "epoch": 29,
+  "focal_loss_alpha": 1.0,
+  "focal_loss_gamma": 2.0,
+  "label_smoothing": 0.1
+}

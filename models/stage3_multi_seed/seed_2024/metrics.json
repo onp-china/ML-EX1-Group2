@@ -1,0 +1,17 @@
+{
+  "best_val_acc": 0.8671,
+  "best_val_f1": 0.8670999986704997,
+  "best_epoch": 75,
+  "params": 4754698,
+  "final_loss": 0.09058351925266978,
+  "layers": [
+    3,
+    3,
+    3
+  ],
+  "use_bottleneck": false,
+  "feat_dim": 256,
+  "use_amp": true,
+  "device": "cuda",
+  "seed": 2024
+}

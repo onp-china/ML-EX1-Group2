@@ -1,0 +1,53 @@
+{
+  "validation": {
+    "cv_accuracy": 0.8856999999999999,
+    "cv_std": 0.009352005132590543,
+    "fold_scores": [
+      0.8845,
+      0.9005,
+      0.8865,
+      0.886,
+      0.871
+    ]
+  },
+  "test_public": {
+    "accuracy": 0.8905,
+    "f1": 0.8885496183206106
+  },
+  "comparison": {
+    "simple_average": 0.8875,
+    "original_stacking": 0.903,
+    "aggressive_stacking": 0.8905,
+    "improvement": -0.012500000000000067
+  },
+  "parameters": {
+    "objective": "binary",
+    "metric": "binary_logloss",
+    "boosting_type": "gbdt",
+    "num_leaves": 127,
+    "max_depth": 15,
+    "learning_rate": 0.1,
+    "n_estimators": 500,
+    "feature_fraction": 0.95,
+    "bagging_fraction": 0.95,
+    "bagging_freq": 5,
+    "min_child_samples": 5,
+    "lambda_l1": 0,
+    "lambda_l2": 0,
+    "verbose": -1,
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "model_names": [
+    "resnet_optimized_1.12",
+    "resnet_fusion",
+    "resnet_optimized",
+    "seed_2025",
+    "seed_2023",
+    "seed_2024",
+    "resnet_fusion_seed42",
+    "resnet_fusion_seed123",
+    "resnet_fusion_seed456"
+  ],
+  "n_models": 9
+}

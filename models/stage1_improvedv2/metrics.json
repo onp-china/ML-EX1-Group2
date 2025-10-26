@@ -1,0 +1,12 @@
+{
+  "feat_dim": 256,
+  "layers": [
+    2,
+    2,
+    2
+  ],
+  "best_val_acc": 0.8684,
+  "total_params": 3994134,
+  "trainable_params": 3994134,
+  "epoch": 35
+}

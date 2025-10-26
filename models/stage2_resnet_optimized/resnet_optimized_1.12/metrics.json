@@ -1,0 +1,20 @@
+{
+  "best_val_acc": 0.8875,
+  "best_val_f1": 0.8874840666181738,
+  "best_epoch": 72,
+  "params": 4754698,
+  "final_loss": 0.0799609923263645,
+  "layers": [
+    3,
+    3,
+    3
+  ],
+  "use_bottleneck": false,
+  "feat_dim": 256,
+  "use_amp": true,
+  "device": "cuda",
+  "test_acc": 0.8845,
+  "test_f1": 0.8844248472564282,
+  "test_mode": "with_labels",
+  "val_test_diff": -0.0030000000000000027
+}

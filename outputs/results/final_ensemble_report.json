@@ -1,0 +1,19 @@
+{
+  "validation_dataset": {
+    "single_model": 0.8875,
+    "simple_average": 0.8855,
+    "weighted_average": 0.8859,
+    "stacking": 0.9289,
+    "improvement_vs_single": 0.0414,
+    "fold_scores": [
+      0.8905,
+      0.9045,
+      0.8835,
+      0.897,
+      0.878
+    ],
+    "cv_mean": 0.8908,
+    "cv_std": 0.0089
+  },
+  "note": "这些是基于验证集的结果，测试集需要重新评估"
+}

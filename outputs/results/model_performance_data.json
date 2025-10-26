@@ -1,0 +1,106 @@
+{
+  "individual_models": [
+    {
+      "name": "resnet_optimized_1.12",
+      "train_accuracy": 0.9602,
+      "val_accuracy": 0.8874,
+      "test_public_accuracy": 0.8845,
+      "parameters": 0
+    },
+    {
+      "name": "resnet_fusion",
+      "train_accuracy": 0.93418,
+      "val_accuracy": 0.8792,
+      "test_public_accuracy": 0.89,
+      "parameters": 0
+    },
+    {
+      "name": "resnet_optimized",
+      "train_accuracy": 0.9137,
+      "val_accuracy": 0.878,
+      "test_public_accuracy": 0.882,
+      "parameters": 0
+    },
+    {
+      "name": "seed_2025",
+      "train_accuracy": 0.94998,
+      "val_accuracy": 0.8739,
+      "test_public_accuracy": 0.8785,
+      "parameters": 0
+    },
+    {
+      "name": "seed_2023",
+      "train_accuracy": 0.94722,
+      "val_accuracy": 0.8702,
+      "test_public_accuracy": 0.8795,
+      "parameters": 0
+    },
+    {
+      "name": "seed_2024",
+      "train_accuracy": 0.9377,
+      "val_accuracy": 0.8671,
+      "test_public_accuracy": 0.8675,
+      "parameters": 0
+    },
+    {
+      "name": "fpn_model",
+      "train_accuracy": 0.95596,
+      "val_accuracy": 0.873,
+      "test_public_accuracy": 0.879,
+      "parameters": 5089626
+    },
+    {
+      "name": "resnet_fusion_seed42",
+      "train_accuracy": 0.89742,
+      "val_accuracy": 0.8546,
+      "test_public_accuracy": 0.8525,
+      "parameters": 0
+    },
+    {
+      "name": "resnet_fusion_seed456",
+      "train_accuracy": 0.88762,
+      "val_accuracy": 0.8488,
+      "test_public_accuracy": 0.835,
+      "parameters": 0
+    },
+    {
+      "name": "resnet_fusion_seed123",
+      "train_accuracy": 0.88332,
+      "val_accuracy": 0.8456,
+      "test_public_accuracy": 0.848,
+      "parameters": 0
+    }
+  ],
+  "stacking_ensemble": {
+    "train_accuracy": 0.95668,
+    "train_f1": 0.95670251469236,
+    "val_accuracy": 0.9081,
+    "val_f1": 0.9082559648597385,
+    "test_public_accuracy": 0.8985,
+    "test_public_f1": 0.8975265017667845,
+    "cv_scores": [
+      0.89,
+      0.907,
+      0.89,
+      0.9015,
+      0.8725
+    ],
+    "cv_mean": 0.8922000000000001,
+    "cv_std": 0.011860016863394404,
+    "confusion_matrix": [
+      [
+        4532,
+        468
+      ],
+      [
+        451,
+        4549
+      ]
+    ]
+  },
+  "simple_average": {
+    "train_accuracy": 0.9267299999999998,
+    "val_accuracy": 0.86778,
+    "test_public_accuracy": 0.86965
+  }
+}

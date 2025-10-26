@@ -1,0 +1,56 @@
+{
+  "single_model_acc": 0.8875,
+  "best_method": "Stacking Meta-Learner",
+  "best_acc": 0.9289,
+  "improvement": 0.04139999999999999,
+  "all_methods": [
+    [
+      "Stacking Meta-Learner",
+      0.9289
+    ],
+    [
+      "Best Single Model",
+      0.8875
+    ],
+    [
+      "Performance Weighted",
+      0.8859
+    ],
+    [
+      "Simple Average",
+      0.8855
+    ]
+  ],
+  "model_accuracies": [
+    0.8875,
+    0.8792,
+    0.878,
+    0.8739,
+    0.873,
+    0.8702,
+    0.8671,
+    0.8538,
+    0.8436,
+    0.8439
+  ],
+  "model_names": [
+    "resnet_optimized_1.12",
+    "resnet_fusion",
+    "resnet_optimized",
+    "seed_2025",
+    "fpn_model",
+    "seed_2023",
+    "seed_2024",
+    "resnet_fusion_seed42",
+    "resnet_fusion_seed123",
+    "resnet_fusion_seed456"
+  ],
+  "reached_90_percent": true,
+  "stacking_fold_scores": [
+    0.8905,
+    0.9045,
+    0.8835,
+    0.897,
+    0.878
+  ]
+}
