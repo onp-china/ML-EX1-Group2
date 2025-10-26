@@ -18,7 +18,7 @@ This project implements a **Stacking Ensemble** approach for binary classificati
 | resnet_fusion_seed42 | 89.74% | 85.46% | 85.25% | ~5M |
 | resnet_fusion_seed456 | 88.76% | 84.88% | 83.50% | ~5M |
 | resnet_fusion_seed123 | 88.33% | 84.56% | 84.80% | ~5M |
-| **Stacking Ensemble** | **95.67%** | **90.81%** | **89.85%** | 10 models + LightGBM |
+| **Stacking Ensemble** | **95.67%** | **90.81%** | **90.00%** | 10 models + LightGBM |
 
 ### Model Size and Training Time
 
