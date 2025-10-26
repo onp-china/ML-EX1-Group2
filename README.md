@@ -1,6 +1,15 @@
 # MNIST Digit Pair Comparison - Stacking Ensemble Solution
 
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/onp-china/ML-EX1-Group2)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 This project implements a **Stacking Ensemble** approach for binary classification of MNIST digit pairs, achieving **90.81% accuracy on validation set** and **89.85% on test_public set**.
+
+## 🔗 Repository
+
+**GitHub**: https://github.com/onp-china/ML-EX1-Group2
+
+This repository contains the complete implementation, trained models, and all experimental results for the MNIST digit pair comparison task.
 
 ## 📊 Final Model Performance
 
@@ -38,41 +47,64 @@ mnist-demo/
 │   ├── __init__.py
 │   ├── data_loader.py           # Data loading utilities
 │   ├── model_loader.py          # Model loading utilities
-│   ├── models/                  # Model architectures
-│   │   ├── simple_compare_cnn.py    # ResNet-based models
-│   │   └── fpn_architecture_v2.py   # FPN model
-│   └── stacking_ensemble.py     # Stacking ensemble implementation
+│   ├── stacking_ensemble.py     # Stacking ensemble implementation
+│   ├── augmentation.py          # Data augmentation utilities
+│   ├── dynamic_ensemble.py      # Dynamic ensemble methods
+│   ├── mc_dropout.py            # Monte Carlo dropout
+│   ├── two_level_stacking.py   # Two-level stacking
+│   ├── training_history.py      # Training history management
+│   └── models/                  # Model architectures
+│       ├── __init__.py
+│       ├── simple_compare_cnn.py    # ResNet-based models
+│       └── fpn_architecture_v2.py   # FPN model
 ├── models/                       # Trained model weights
-│   ├── stage2_resnet_optimized/
+│   ├── stage1_improvedv2/       # Initial improved model
+│   ├── stage2_resnet_optimized/ # Optimized ResNet models
 │   │   ├── resnet_optimized_1.12/
 │   │   ├── resnet_fusion/
 │   │   └── resnet_optimized/
-│   └── stage3_multi_seed/
-│       ├── seed_2023/, seed_2024/, seed_2025/
-│       ├── fpn_model/
-│       └── resnet_fusion_seed*/
+│   ├── stage3_multi_seed/       # Multi-seed models
+│   │   ├── seed_2023/, seed_2024/, seed_2025/
+│   │   ├── fpn_model/
+│   │   └── resnet_fusion_seed*/
+│   ├── stage4_stacking/         # Stacking results
+│   └── stage5_advanced_ensemble/ # Advanced ensemble methods
 ├── data/                         # Dataset files
-│   ├── train.npz
-│   ├── val.npz
-│   ├── test_public.npz
-│   ├── test_public_labels.csv
-│   └── test_private.npz
+│   ├── train.npz               # 50,000 training samples
+│   ├── val.npz                 # 10,000 validation samples
+│   ├── test_public.npz         # 2,000 public test samples
+│   ├── test_public_labels.csv  # Public test labels
+│   └── test_private.npz        # 8,000 private test samples
 ├── scripts/                      # Training and evaluation scripts
 │   ├── training/                # Training scripts
-│   ├── generate_private_predictions.py
-│   ├── evaluate_10models_stacking.py
-│   └── create_final_visualizations.py
+│   │   ├── train_stage1_improvedv2.py
+│   │   ├── train_stage2_resnet_optimized.py
+│   │   ├── train_stage3_multi_seed.py
+│   │   └── train_fpn_model.py
+│   ├── generate_private_predictions.py  # Generate final predictions
+│   ├── evaluate_10models_stacking.py    # Evaluate stacking
+│   └── create_final_visualizations.py  # Create visualizations
+├── docs/                         # Documentation
+│   ├── TRAINING_GUIDE.md
+│   ├── PREDICTION_SUMMARY.md
+│   ├── MODEL_CLASSIFICATION.md
+│   └── ...
 ├── outputs/                      # Results and visualizations
-│   ├── results/
+│   ├── results/                  # Evaluation results
 │   │   ├── performance_table.csv
-│   │   └── 10models_stacking_evaluation.json
-│   └── visualizations/
-│       ├── performance_table.png
-│       ├── confusion_matrix.png
-│       └── stacking_training_process.png
-├── requirements.txt              # Python dependencies
+│   │   ├── 10models_stacking_evaluation.json
+│   │   └── BEST_SOLUTION_test_public_90.30.json
+│   ├── visualizations/          # Visualizations
+│   │   ├── performance_table.png
+│   │   ├── confusion_matrix.png
+│   │   └── stacking_training_process.png
+│   └── checkpoints/             # Training checkpoints
+├── visualization/               # Visualization scripts
+│   └── visualization/           # Model visualization code
+├── requirements.txt             # Python dependencies
 ├── pred_private.csv             # Final predictions for test_private
 ├── check_submission.py          # Submission format validator
+├── PROJECT_STRUCTURE.md         # Detailed project structure
 └── README.md                    # This file
 ```
 
@@ -106,12 +138,13 @@ pip install -r requirements.txt
 
 - Python 3.8+
 - PyTorch 2.0+ (with CUDA support recommended)
-- NumPy
-- Pandas
-- scikit-learn
-- LightGBM
-- Matplotlib
-- Seaborn
+- NumPy 1.21.0+
+- Pandas 1.3.0+
+- scikit-learn 1.0.0+
+- LightGBM 3.3.0+
+- Matplotlib 3.5.0+
+- Seaborn 0.11.0+
+- tqdm 4.60.0+ (for progress bars)
 
 ### 2. Data Preparation
 
@@ -326,8 +359,10 @@ If you use this code, please cite:
 
 ```
 MNIST Digit Pair Comparison - Stacking Ensemble Solution
+Group 2
 10-Model Ensemble with LightGBM Meta-learner
 Validation Accuracy: 90.81% | Test Public Accuracy: 89.85%
+Repository: https://github.com/onp-china/ML-EX1-Group2
 ```
 
 ## 📄 License
@@ -339,9 +374,16 @@ This project is for educational and research purposes.
 - MNIST dataset creators
 - PyTorch and scikit-learn communities
 - LightGBM developers
+- Stacking ensemble method community
+
+## 📞 Contact
+
+- **GitHub Issues**: https://github.com/onp-china/ML-EX1-Group2/issues
+- **Repository**: https://github.com/onp-china/ML-EX1-Group2
+- For questions or issues, please refer to the project documentation in `docs/`
 
 ---
 
-**Last Updated**: October 26, 2025
+**Last Updated**: January 2025
 
-**Contact**: For questions or issues, please refer to the project documentation.
+**Author**: Group 2 (ML-EX1-Group2)
